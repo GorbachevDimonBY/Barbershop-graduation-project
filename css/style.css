@@ -1,0 +1,865 @@
+/* ---Шапка страницы--- */
+
+
+.headerNav .active {
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+}
+
+
+
+.slideContent a {
+	background-color: #9e8a78;
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 5px;
+	text-shadow: 1px 1px #000;
+	transition: .5s ease;
+}
+
+.slideContent a:hover {
+	transition: .5s ease;
+	background-color: #5a5857;
+}
+
+
+.slideContent a:hover {
+	text-decoration: none;
+}
+
+.pos-f-t {
+	display: none;
+}
+
+.bg-dark {
+	background-color: #222227 !important;
+}
+
+.headerPage {
+	display: flex;
+	background-color: #222227;
+	justify-content: center;
+	width: 100%;
+	position: fixed;
+	z-index: 20;
+}
+
+.headerLogo {
+	display: flex;
+	flex-grow: 2;
+	justify-content: flex-end;
+
+}
+
+.headerNav {
+	display: flex;
+	align-items: center;
+	flex-grow: 3;
+	justify-content: center;
+}
+
+.headerNav__link {
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+	position: relative;
+}
+
+.headerNav__link:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.headerNav__link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: scaleY(1.3);
+	transition: .5s;
+	opacity: 0;
+	z-index: -1;
+}
+
+.headerNav__link:hover::before {
+	transform: scaleY(1);
+	opacity: 1;
+}
+
+.headerNav__link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #9e8a78;
+	transform: scale(0);
+	transition: .5s;
+	z-index: -1;
+}
+
+.headerNav__link:hover::after {
+	transform: scaleY(1);
+}
+
+.headerLogo__img {
+	width: 170px;
+	position: relative;
+	top: 20px;
+	z-index: 1;
+}
+
+.bg-dark ul li a {
+	padding: 5px;
+	transition: .3s;
+}
+
+.bg-dark ul li {
+	margin-bottom: 10px;
+}
+
+.bg-dark ul li a:hover {
+	background-color: #9e8a78;
+	transition: .5s;
+}
+
+
+
+/* ---Слайдер 1-ой страницы--- */
+
+.headerSlide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+}
+
+.headerSlide__One {
+	background: url('../img/content/sliderThree.jpg') no-repeat center center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.headerSlide__Two {
+	background: url('../img/content/productPage.jpg') no-repeat center center;
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+}
+
+.headerSlide__Three {
+	background: url('../img/content/servicePage.jpg') no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.slideContent,
+.boxSlide {
+	animation: 1.5s Up;
+}
+
+.slideContent__title {
+	font-size: 55px;
+	font-weight: bold;
+}
+
+.slideContent__text {
+	font-size: 20px;
+}
+
+/* ---Блок "О нас"--- */
+
+.content {
+	padding: 100px 0;
+	display: flex;
+}
+
+.contentAbout {
+	max-width: 1300px;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.blockAbout {
+	display: flex;
+}
+
+.aboutText {
+	flex-grow: 6;
+	flex-basis: 0px;
+	text-align: center;
+	padding-left: 20px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.aboutText__logo {
+	width: 50%;
+}
+
+.aboutText__title {
+	color: #9e8a78;
+	font-size: 36px;
+}
+
+.aboutPhoto {
+	flex-grow: 7;
+	position: relative;
+}
+
+.aboutPhoto__img {
+	width: 310px;
+	position: absolute;
+}
+
+.aboutPhoto__img--position1 {
+	top: 0px;
+	left: 80px;
+}
+
+.aboutPhoto__img--position2 {
+	top: 50px;
+	left: 330px;
+}
+
+.aboutPhoto__img--position3 {
+	top: 190px;
+	left: 95px;
+}
+
+
+/* ---Блок "Наши результаты"--- */
+
+.contentResult {
+	flex-direction: column;
+	background: #fafafa;
+}
+
+.blockResult {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.boxResult {
+	width: 25%;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boxResult__img {
+	width: 30%;
+}
+
+.boxResult__number {
+	font: bold 36px 'Montserrat';
+	margin: 30px 0 10px;
+	background-color: #9e8a78;
+	width: 200px;
+	color: #fff;
+	border-radius: 5px;
+	text-shadow: 2px 2px #000;
+}
+
+.headerBlocks__title {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	padding: 7px;
+	width: max-content;
+	border-top: 1px solid #5a5857;
+	border-bottom: 1px solid #5a5857;
+	margin: 0 auto 20px;
+}
+
+.headerBlocks__text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	background-color: #9e8a78;
+	color: #fff;
+	border-radius: 5px;
+	width: max-content;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+/* ---Блок "Запись к мастеру"--- */
+
+.boxForm {
+	background: #fff;
+	width: 400px;
+	padding: 40px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.boxForm__title {
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.boxForm__input {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px solid #9e8a78;
+	padding: 8px 6px;
+	color: #000;
+	border-radius: 10px;
+	transition: 0.25s;
+}
+
+.boxForm__input--text {
+	width: 240px;
+}
+
+.boxForm__input--text:focus {
+	width: 300px;
+	border-color: #5a5857;
+}
+
+.boxForm__input--submit {
+	width: 180px;
+}
+
+.boxForm__input--submit:hover {
+	background-color: #9e8a78;
+	color: #fff;
+}
+
+.contentSlide {
+	min-height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contentSlide-Record {
+	background: url('../img/record.jpg') no-repeat center center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.recordContent {
+	width: 37%;
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+.recordContent__title {
+	font-weight: bold;
+}
+
+/* ---Блок "Наша команда"--- */
+
+.contentTeam {
+	flex-direction: column;
+}
+
+.blockTeam {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.staff {
+	width: 25%;
+	text-align: center;
+}
+
+.staff__img {
+	width: 85%;
+	border-radius: 10px;
+	filter: contrast(85%) grayscale(15%);
+	transition: all 0.1s ease-out;
+}
+
+/* ---Подвал страницы--- */
+
+.footer {
+	padding: 100px 0;
+	background-color: #222227;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footerLogo_image {
+	width: 60%;
+}
+
+.footerContent {
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	margin: 50px 0;
+}
+
+.footer-Contact {
+	color: #fff;
+	width: 20%;
+	margin: 0 20px;
+}
+
+.footer-Contact svg {
+	fill: #fff;
+	width: 40px;
+}
+
+.footer-Contact__text {
+	padding: 20px 0;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 20px;
+	position: relative;
+	border-top: 1px solid #9e8a78;
+}
+
+.footerMessengers a {
+	width: 70px;
+	height: 70px;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 20px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers {
+	display: flex;
+}
+
+.footerMessengers a:hover:nth-child(1) {
+	border: 5px solid #3b5998;
+	box-shadow: 0 0 15px #3b5998;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover .fa-facebook {
+	color: #3b5998;
+	text-shadow: 0 0 15px #3b5998;
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+
+.footerMessengers a:hover:nth-child(2) {
+	border: 5px solid #00aced;
+	box-shadow: 0 0 15px #00aced;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover .fa-twitter {
+	color: #00aced;
+	text-shadow: 0 0 15px #00aced;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover:nth-child(3) {
+	border: 5px solid #bc2a8d;
+	box-shadow: 0 0 15px #bc2a8d;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover .fa-instagram {
+	color: #bc2a8d;
+	text-shadow: 0 0 15px #bc2a8d;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover:nth-child(4) {
+	border: 5px solid #dd4b39;
+	box-shadow: 0 0 15px #dd4b39;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover .fa-google {
+	color: #dd4b39;
+	text-shadow: 0 0 15px #dd4b39;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover:nth-child(5) {
+	border: 5px solid #45668e;
+	box-shadow: 0 0 15px #45668e;
+	transition: all 0.3s ease;
+}
+
+.footerMessengers a:hover .fa-vk {
+	color: #45668e;
+	text-shadow: 0 0 15px #45668e;
+	transition: all 0.3s ease;
+}
+
+/* ---Страницы "Услуги"--- */
+
+.service {
+	background: url('../img/content/servicePage.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contentService {
+	flex-direction: column;
+	background-color: #fafafa;
+}
+
+.headerBlocks {
+	text-align: center;
+}
+
+.service-boxes {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.box-service {
+	width: 20%;
+	text-align: center;
+}
+
+.box-service img {
+	border-radius: 50%;
+	width: 70%;
+	transform: scale(1);
+	transition: .5s;
+}
+
+.box-service img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
+	transition: .3s;
+}
+
+.box-service h4 {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.box-service p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.blockWorks {
+	padding: 100px 0;
+}
+
+.ourWorks {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 40px auto 0;
+}
+
+.ourWorks a {
+	width: 25%;
+}
+
+.ourWorks a img {
+	width: 97%;
+	margin-bottom: 10px;
+
+}
+
+/* ---Страницы "Продукция"--- */
+.slidePage {
+	height: 100vh;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product {
+	background: url('../img/content/productPage.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.boxSlide {
+	width: 60%;
+	text-align: center;
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+}
+
+.boxSlide img {
+	margin: 30px 0;
+}
+
+.boxSlide h2 {
+	font-weight: bold;
+	font-size: 34px;
+}
+
+.catalogue {
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.productBlock {
+	width: 1100px;
+}
+
+.productText__input {
+	display: none;
+}
+
+.productText p {
+	display: none;
+	transition: 1s;
+}
+
+.productText__input--One:checked+label+p {
+	display: block;
+}
+
+.productText__input--One+label {
+	cursor: pointer;
+}
+
+.productText__input--One:checked+label {
+	display: none;
+}
+
+.productText__input--Two+label {
+	display: none;
+}
+
+.productText__input--One:checked+label+p+input+label {
+	display: block;
+}
+
+.productBoxes {
+	width: 29%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.productBoxes img {
+	width: 100%;
+}
+
+.productList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.productText {
+	border: 1px solid #5a5857;
+	padding: 10px;
+	text-align: center;
+	min-height: 135px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.productText label {
+	border-radius: 3px;
+	padding: 5px 10px;
+	background-color: #9e8a78;
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	background-image: linear-gradient(to left, transparent, transparent 50%, #fafafa 50%, #fafafa);
+	background-position: 100% 0;
+	background-size: 200% 100%;
+	transition: all .25s ease-in;
+}
+
+.productText label:hover {
+	background-position: 0 0;
+	color: #000;
+	border: 1px solid #000;
+}
+
+
+
+.productText h4 {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.productText p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---Страницы "Цена"--- */
+
+.price {
+	background: url('../img/content/pricePage.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contentPrice {
+	flex-direction: column;
+}
+
+.blockPrice {
+	display: flex;
+	justify-content: center;
+	max-width: 1270px;
+	margin: 40px auto 0;
+}
+
+.priceBox {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	margin: 0px 10px;
+
+}
+
+.priceTitle {
+	font-family: 'Playfair Display', serif;
+	background-color: #9e8a78;
+	color: #fff;
+	width: min-content;
+	padding: 10px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+	border-radius: 5px;
+}
+
+.priceText {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Playfair Display', serif;
+}
+
+
+.priceText__title {
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.priceText__title::after {
+	content: '   -----------------------------------------';
+	font-weight: bold;
+	color: #9e8a78;
+	white-space: pre;
+	position: absolute;
+
+}
+
+.priceText__number {
+	width: 20%;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+/* ---Страница "Контакты"--- */
+
+.contacts {
+	background: url('../img/content/sliderThree.jpg') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contentContacts {
+	justify-content: center;
+	align-items: center;
+}
+
+.contactsTitle {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 20px;
+}
+
+.contactsText {
+	font-size: 20px;
+}
+
+.blockContacts {
+	border: 1px solid #5a5857;
+	padding: 40px 60px;
+}
+
+/* Наша команда */
+
+.blockTeam {
+	width: 90%;
+	margin: 40px auto 0;
+	text-align: center;
+}
+
+.photoTeam__list {
+	display: inline-block;
+	width: 33%;
+	position: relative;
+	overflow: hidden;
+}
+
+.photoTeam__img {
+	max-width: 100%;
+	display: block;
+	margin-left: 15px;
+}
+
+.photoTeam__descr {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	opacity: 0;
+	transition: all .4s;
+	padding-top: 38%;
+	margin-left: 15px;
+
+}
+
+.photoTeam__list:hover .photoTeam__descr {
+	display: block;
+	opacity: 1;
+	top: 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}

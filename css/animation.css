@@ -1,0 +1,11 @@
+@keyframes Up {
+	0% {
+		transform: translate(0px, 200px) rotate(0deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0px, 0px) rotate(0deg);
+		opacity: 1;
+	}
+}

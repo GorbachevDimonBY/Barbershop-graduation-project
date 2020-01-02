@@ -1,0 +1,459 @@
+@media screen and (max-width:1279px) {
+
+    /*Главная*/
+
+    .slideContent {
+        text-align: center;
+    }
+
+    .aboutPhoto__img--position1,
+    .aboutPhoto__img--position3,
+    .aboutPhoto__img--position2 {
+        display: none;
+    }
+
+    .aboutPhoto {
+        background: url(../img/content/AboutMedia.jpg) no-repeat left bottom;
+        margin: 0px 20px 0px 20px;
+        position: static;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .aboutText {
+        flex-grow: 8;
+    }
+
+    .aboutText__title {
+        font-size: 30px;
+    }
+
+    .staff {
+        width: 33%;
+    }
+
+    .slideContent__title {
+        font-size: 45px;
+    }
+
+    .slideContent__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .footer-Contact {
+        width: 25%;
+    }
+
+    .footerContent {
+        width: 80%;
+    }
+
+    /*Услуги*/
+
+    .box-service {
+        width: 24%;
+    }
+
+    .box-service h4 {
+        font-size: 18px;
+    }
+
+    .ourWorks {
+        width: 90%;
+    }
+
+    /*Цена*/
+
+    .blockPrice {
+        justify-content: start;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .priceBox {
+        width: 47%;
+    }
+
+    /*Продукция*/
+
+    .productText h4 {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:991px) {
+
+    /*Главная*/
+
+    .headerNav__link {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .headerLogo__img {
+        width: 140px;
+    }
+
+    .slideContent {
+        text-align: center;
+    }
+
+    .slideContent__title {
+        font-size: 35px;
+    }
+
+    .slideContent__text {
+        font-size: 18px;
+    }
+
+    .contentAbout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blockAbout {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .aboutText {
+        font-size: 18px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .aboutText__title {
+        font-size: 24px;
+    }
+
+    .aboutPhoto {
+        height: 450px;
+        width: 100%;
+    }
+
+    .boxResult {
+        width: 33%;
+        font-size: 18px;
+    }
+
+    .boxResult__img {
+        width: 50%;
+    }
+
+    .headerBlocks__title {
+        font-size: 1.75rem;
+    }
+
+    .headerBlocks__text {
+        width: 90%;
+    }
+
+    .contentSlide {
+        flex-direction: column;
+    }
+
+    .recordContent {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .boxResult__number {
+        font-size: 1.75rem;
+    }
+
+    .photoTeam__list {
+        width: 56%;
+    }
+
+    .photoTeam__img,
+    .photoTeam__descr {
+        margin-left: 0px;
+    }
+
+    /*Услуги*/
+
+    .boxSlide {
+        font-size: 18px;
+    }
+
+    .service-boxes {
+        flex-wrap: wrap;
+    }
+
+    .box-service {
+        width: 40%;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-Contact {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .ourWorks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .ourWorks a {
+        width: 33.3%;
+    }
+
+    /*Цена*/
+
+    .blockPrice {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .priceBox {
+        width: 80%;
+    }
+
+    /*Продукция*/
+
+    .productBlock {
+        width: 90%;
+    }
+
+    .productBoxes {
+        width: 44%;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+    /*Главная*/
+
+    .pos-f-t {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .headerPage {
+        display: none;
+    }
+
+    .headerLogo__img {
+        padding: 5px;
+        position: static;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: -1;
+    }
+
+    .ourWorks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ourWorks a {
+        width: 50%;
+    }
+
+    .box-service {
+        width: 46%;
+
+    }
+
+    /*Цена*/
+
+    .blockPrice {
+        width: 100%;
+    }
+
+    /*Продукция*/
+
+    .productList {
+        justify-content: center;
+    }
+
+    .productBoxes {
+        width: 70%;
+    }
+
+    /*Контакты*/
+
+    .contactsText {
+        font-size: 18px;
+    }
+
+    .contactsTitle h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:639px) {
+
+    /*Главная*/
+
+    .slideContent__title {
+        font-size: 25px;
+    }
+
+    .slideContent__text {
+        font-size: 16px;
+    }
+
+    .slideContent__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .blockAbout,
+    .recordContent {
+        width: 90%;
+    }
+
+    .recordContent {
+        margin-bottom: 40px;
+    }
+
+    .blockResult {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxResult {
+        width: 50%;
+    }
+
+    .photoTeam__list {
+        width: 70%;
+    }
+
+    .headerBlocks__text {
+        width: 95%;
+    }
+
+    .headerBlocks {
+        text-align: center;
+    }
+
+    .fa-2x {
+        font-size: 1.2em;
+    }
+
+    .footerMessengers a {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+
+    .headerBlocks__title {
+        font-size: 1.4rem;
+    }
+
+    .headerBlocks__text {
+        width: 80%;
+    }
+
+    /*Услуги*/
+
+    .boxSlide {
+        width: 90%;
+    }
+
+    .boxSlide h2 {
+        font-size: 25px;
+    }
+
+    .ourWorks a {
+        width: 80%;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-service {
+        width: 70%;
+    }
+
+    .priceText__number {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .priceTitle h4 {
+        font-size: 1.2rem;
+    }
+
+    .priceText__title {
+        font-size: 1rem;
+    }
+
+    .priceText__number {
+        font-size: 1rem;
+    }
+
+    /* продукция */
+
+    .productBoxes {
+        width: 85%;
+    }
+
+    /* контакты */
+
+    .blockContacts {
+        padding: 10px 15px;
+    }
+
+    .contactsText {
+        font-size: 16px;
+    }
+
+    .contactsTitle h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .boxForm {
+        width: 340px;
+        padding: 20px;
+        margin:
+    }
+
+    .boxForm__title {
+        font-size: 1.25rem;
+    }
+
+    .boxForm__input--text {
+        width: 200px;
+    }
+
+    .boxForm__input--text:focus {
+        width: 240px;
+        border-color: #5a5857;
+    }
+
+    .boxForm__input--submit {
+        width: 150px;
+    }
+
+}
